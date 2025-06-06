@@ -13,13 +13,31 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: test 1
-      id: test-1
+    - name: test 1a
+      id: test-1a
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: test 1
+        test-name: test 1a
         setup-command: npm install
-        command: npm run test tests/exercice_1.test.js
+        command: npm run test tests/exercice_1a.test.js
+        timeout: 10
+        max-score: 1
+    - name: test 1b
+      id: test-1b
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: test 1b
+        setup-command: npm install
+        command: npm run test tests/exercice_1b.test.js
+        timeout: 10
+        max-score: 1
+    - name: test 1c
+      id: test-1c
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: test 1c
+        setup-command: npm install
+        command: npm run test tests/exercice_1c.test.js
         timeout: 10
         max-score: 1
     - name: test 2
