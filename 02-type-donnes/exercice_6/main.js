@@ -1,6 +1,6 @@
-let age = 10;
-let nom = "Grâce";
-let estConnecte = false;
+let age = 25;
+let nom = "Chretien";
+let estConnecte = true;
 let valeurNulle = null;
 let inconnue;
 
