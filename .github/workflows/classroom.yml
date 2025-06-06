@@ -41,13 +41,31 @@ jobs:
         command: npm run test tests/exercice_1c.test.js
         timeout: 10
         max-score: 1
-    - name: test 2
-      id: test-2
+    - name: test 2a
+      id: test-2a
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: test 2
+        test-name: test 2a
         setup-command: npm install
-        command: 'npm run test tests/exercice_2.test.js '
+        command: 'npm run test tests/exercice_2a.test.js '
+        timeout: 10
+        max-score: 1
+    - name: test 2b
+      id: test-2b
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: test 2b
+        setup-command: npm install
+        command: 'npm run test tests/exercice_2b.test.js '
+        timeout: 10
+        max-score: 1
+    - name: test 2c
+      id: test-2c
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: test 2c
+        setup-command: npm install
+        command: 'npm run test tests/exercice_2c.test.js '
         timeout: 10
         max-score: 1
     - name: test 3
@@ -116,10 +134,12 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        TEST-1a_RESULTS: "${{steps.test-1a.outputs.result}}"
-        TEST-1b_RESULTS: "${{steps.test-1b.outputs.result}}"
-        TEST-1c_RESULTS: "${{steps.test-1c.outputs.result}}"
-        TEST-2_RESULTS: "${{steps.test-2.outputs.result}}"
+        TEST-1A_RESULTS: "${{steps.test-1a.outputs.result}}"
+        TEST-1B_RESULTS: "${{steps.test-1b.outputs.result}}"
+        TEST-1C_RESULTS: "${{steps.test-1c.outputs.result}}"
+        TEST-2A_RESULTS: "${{steps.test-2a.outputs.result}}"
+        TEST-2B_RESULTS: "${{steps.test-2b.outputs.result}}"
+        TEST-2C_RESULTS: "${{steps.test-2c.outputs.result}}"
         TEST-3_RESULTS: "${{steps.test-3.outputs.result}}"
         TEST-4_RESULTS: "${{steps.test-4.outputs.result}}"
         TEST-5_RESULTS: "${{steps.test-5.outputs.result}}"
@@ -128,4 +148,4 @@ jobs:
         TEST-8_RESULTS: "${{steps.test-8.outputs.result}}"
         TEST-9_RESULTS: "${{steps.test-9.outputs.result}}"
       with:
-        runners: test-1a,test-1b,test-1c,test-2,test-3,test-4,test-5,test-6,test-7,test-8,test-9
+        runners: test-1a,test-1b,test-1c,test-2a,test-2b,test-2c,test-3,test-4,test-5,test-6,test-7,test-8,test-9
