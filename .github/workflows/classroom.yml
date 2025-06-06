@@ -115,7 +115,9 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        TEST-1_RESULTS: "${{steps.test-1a.outputs.result}}${{steps.test-1b.outputs.result}}${{steps.test-1c.outputs.result}}"
+        TEST-1a_RESULTS: "${{steps.test-1a.outputs.result}}"
+        TEST-1b_RESULTS: "${{steps.test-1b.outputs.result}}"
+        TEST-1c_RESULTS: "${{steps.test-1c.outputs.result}}"
         TEST-2_RESULTS: "${{steps.test-2.outputs.result}}"
         TEST-3_RESULTS: "${{steps.test-3.outputs.result}}"
         TEST-4_RESULTS: "${{steps.test-4.outputs.result}}"
