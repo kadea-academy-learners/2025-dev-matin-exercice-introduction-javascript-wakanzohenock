@@ -398,13 +398,4 @@ jobs:
         TEST-9G_RESULTS: "${{steps.test-9g.outputs.result}}"
         TEST-9H_RESULTS: "${{steps.test-9h.outputs.result}}"
       with:
-        runners: 
-          test-1a,test-1b,test-1c,
-          test-2a,test-2b,test-2c,
-          test-3a,test-3b,test-3c,
-          test-4a,test-4b,
-          test-5a,test-5b,
-          test-6a,test-6b,test-6c,test-6d,test-6e,
-          test-7a,test-7b,test-7c,test-7d,test-7e,
-          test-8a,test-8b,test-8c,test-8d,test-8e,test-8f,test-8g,
-          test-9a,test-9b,test-9c,test-9d,test-9e,test-9f,test-9g,test-9h
+        runners: test-1a,test-1b,test-1c,test-2a,test-2b,test-2c,test-3a,test-3b,test-3c,test-4a,test-4b,test-5a,test-5b,test-6a,test-6b,test-6c,test-6d,test-6e,test-7a,test-7b,test-7c,test-7d,test-7e,test-8a,test-8b,test-8c,test-8d,test-8e,test-8f,test-8g,test-9a,test-9b,test-9c,test-9d,test-9e,test-9f,test-9g,test-9h
