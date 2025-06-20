@@ -1,8 +1,8 @@
-let age= 25; // Nombre entier
-let nom = "Jean"; // Chaîne de caractère
-let estConnecte= true; // Booléen
-let valeurNulle= null; // Valeur nulle
-let inconnue; // Valeur indéfinie
+let age = 16;
+let nom = "KALALA";
+let estConnecte = true ;
+let valeurNulle = null;
+let inconnue ;
 
 // Les lignes ne doivent pas être modifiées
 module.exports = {

@@ -1,10 +1,10 @@
 let ageEnfant, agePere, ageMere, ageGrandPere, ageOncle;
 // Ecrivez votre code ici
-let ageEnfant = 10; // Nombre entier
-let agePere = 20; // Nombre entier
-let ageMere = 15; // Nombre entier
-let ageGrandPere = 35; // Nombre entier
-let ageOncle = 30; // Nombre entier
+ageEnfant = 30;
+agePere = ageEnfant * 2;
+ageMere = agePere - 5;
+ageGrandPere = (ageMere * 2) + (ageEnfant/2);
+ageOncle = agePere + 10;
 
 // Ne pas modifier le code ci-dessous
 module.exports = {
