@@ -1,3 +1,3 @@
-const VILLE = "Kinshasa";
+const VIlLE = "Kinshasa";
 
 console.log(VILLE);
